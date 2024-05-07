@@ -1,0 +1,261 @@
+1 <!-- DOCYUPE：告诉浏览器使用的规范，这里是 HTML -->
+  2 <!DOCTYPE html>
+  3
+  4 <html lang="en">
+  5
+  6 <!-- 网页头部 -->
+  7
+  8 <head>
+  9     <!-- meta：描述性标签，用来描述网址的信息 -->
+ 10     <meta charset="UTF-8">
+ 11     <meta name="keyWords" content="HTML测试" />
+ 12
+ 13     <!-- 方式一：link 导入外部 css 文件 -->
+ 14     <link href="" rel="stylesheet" type="text/css">
+ 15
+ 16     <!-- 方式二：import 导入外部 css 文件 -->
+ 17     <style>
+ 18         @import url();
+ 19     </style>
+ 20
+ 21     <!-- 导入外部 js 文件 -->
+ 22     <script type="text/javascript" src=""></script>
+ 23
+ 24
+ 25     <!-- 网页标题 -->
+ 26     <title>HTML 测试</title>
+ 27 </head>
+ 28
+ 29 <!-- 网页主体 -->
+ 30
+ 31 <body>
+ 32     <!-- div显示时间控件 -->
+ 33     <div>
+ 34         当前时间：
+ 35         <p id="time" style="display: inline;"></p>
+ 36     </div>
+ 37
+ 38     <!-- 锚链接，需要一个锚标记，跳转到标记 href="#跳转到的标签name"，decoration：取消链接下划线 -->
+ 39     <hr/>
+ 40     <a name="top" href="#bottom" style="text-decoration: none;">跳转底部</a>
+ 41
+ 42     <!-- <h> 标题标签 -->
+ 43     <h1>这是一个一级标题</h3>
+ 44     <h2>这是一个二级标题</h5>
+ 45     <h3>这是一个三级标题</h3>
+ 46     <h4>这是一个四级标题</h5>
+ 47     <h5>这是一个五级标题</h3>
+ 48     <h6>这是一个六级标题</h5>
+ 49
+ 50     <!-- 水平线标签 -->
+ 51     <hr/>
+ 52
+ 53     <!-- 段落标签 -->
+ 54     <p>凤兮凤兮归故乡 遨游四海求其凰</p>
+ 55     <p>时未遇兮无所将 何吾今夕升斯堂</p>
+ 56
+ 57     <!-- 换行标签 -->
+ 58     <br/>
+ 59
+ 60     <!-- 粗体 斜体 --><br/>
+ 61     <hr/>
+ 62     <strong>这是粗体标签</strong><br/>
+ 63     <em>这是斜体标签</em><br/>
+ 64
+ 65     <!-- 特殊符号 --><br/>
+ 66     <hr/>
+ 67     <!-- 空格 &nbsp -->
+ 68     空     格<br/>
+ 69
+ 70     <!-- 小于、大于符号 -->
+ 71     <括号><br/>
+ 72
+ 73     <!-- 版权符号 -->
+ 74     &copy版权所有<br/>
+ 75
+ 76     <!-- 图像标签 --><br/>
+ 77     <hr/>
+ 78     <!-- src：图像地址  alt：图像替代文字  title：鼠标悬停提示文字  weight：图像宽度  height：图像高度 -->
+ 79     <img src="../img/img1.jpg" alt="头像" title="最新更新头像" width="200px" height="200px" />
+ 80
+ 81     <!-- 链接标签 --><br/>
+ 82     <hr/>
+ 83     <!-- href：链接路径  target：在哪个窗口打开（_self 本界面, _blank 新开标签） <a>链接文本或图片</a> -->
+ 84     <a href="https://www.baidu.com" target="_blank">百度百科链接</a>
+ 85
+ 86
+ 87
+ 88     <!-- 功能性链接 --><br/>
+ 89     <hr/>
+ 90     <!-- 邮件链接：mailto -->
+ 91     <a href="mailto:zq@163.com">点击联系我-邮箱</a>
+ 92
+ 93
+ 94     <!-- 列表标签 --><br/>
+ 95     <hr/>
+ 96     <!-- 有序标签，应用试卷，问答 -->
+ 97     <ol>
+ 98         <li>Java</li>
+ 99         <li>C++</li>
+100         <li>Python</li>
+101         <li>PHP</li>
+102     </ol>
+103
+104     <!-- 无序标签，应用于导航，测边栏 -->
+105     <hr/>
+106     <!-- 空心圆 -->
+107     <ul type="circle">
+108         <li>Java</li>
+109         <li>C++</li>
+110         <li>Python</li>
+111         <li>PHP</li>
+112     </ul>
+113
+114     <!-- 自定义标签  dl:标签  dt:列表名称  dd:列表内容，应用于公司网站底部 -->
+115     <hr/>
+116     <dl>
+117         <dt>学科</dt>
+118         <dd>Java</dd>
+119         <dd>C++</dd>
+120         <dd>Python</dd>
+121         <dd>PHP</dd>
+122         <dt>地点</dt>
+123         <dd>上海</dd>
+124         <dd>北京</dd>
+125         <dd>杭州</dd>
+126         <dd>福州</dd>
+127     </dl>
+128
+129     <!-- 表格标签 --><br/>
+130     <hr/>
+131     <!--
+132         border: 边框厚度
+133         cellspacing：内边框厚度
+134         rowspan=x, 跨行，表示占几行，如学号，姓名等占两行，18占三行
+135         colspan=x， 跨列，表示占几列，如成绩占三列
+136 　　-->
+137     <table border="1" cellspacing="0" style="text-align: center;">
+138         <tr>
+139             <tr>
+140                 <th rowspan="2">学号</th>
+141                 <th rowspan="2">姓名</th>
+142                 <th rowspan="2">年龄</th>
+143                 <th colspan="3">成绩</th>
+144             </tr>
+145             <tr>
+146                 <th>Java</th>
+147                 <th>SQL</th>
+148                 <th>HTML</th>
+149             </tr>
+150         </tr>
+151         <tr>
+152             <td>100001</td>
+153             <td>Tom</td>
+154             <td rowspan="3">18</td>
+155             <td>90</td>
+156             <td>85</td>
+157             <td>60</td>
+158         </tr>
+159         <tr>
+160             <td>100002</td>
+161             <td>Jerry</td>
+162             <td>85</td>
+163             <td>98</td>
+164             <td>95</td>
+165         </tr>
+166         <tr>
+167             <td>100003</td>
+168             <td>Mark</td>
+169             <td>80</td>
+170             <td>95</td>
+171             <td>80</td>
+172         </tr>
+173     </table>
+174
+175     <!-- 媒体元素 --><br/>
+176     <hr/>
+177     <!-- 视频标签，src：资源路径  controls：控制条  autoplay：自动播放 --><br/>
+178     <!-- <video src="" controls autoplay>视频标签</video> -->
+179
+180     <!-- 音频标签 src：资源路径  controls：控制条  autoplay：自动播放 --><br/>
+181     <!-- <audio src="" controls autoplay></audio> -->
+182
+183
+184     <!-- iframe 内联框架 -->
+185     <hr><br/>
+186     <!-- src：引用页面路径  name：框架标识名称 -->
+187     <iframe src="" name="myIframe" style="height: 180px; width: 60%;"></iframe>
+188
+189     <!-- 通过链接的 target 可设置到内联框架中打开 --><br/>
+190     <a href="https://www.bilibili.com/" target="myIframe">哔哩哔哩</a>
+191
+192
+193     <!-- 提交表单  action：提交地址  method：提交方式 --><br/>
+194     <hr/>
+195     <!--
+196         placeholder：水印
+197         disabled：禁止使用
+198         readonly：只读不可改
+199         required：必须非空
+200         parttern：正则表达式
+201         label for="email"：点击该标签光标实际选择位置为 email
+202     -->
+203     <form action="myIframe" method="post">
+204         文本框：<input type="text" name="user" placeholder="QQ号码/手机/邮箱" /><br/>205
+206         密码框：<input type="password" name="pwd" placeholder="密码" /><br/>207
+208         单选按钮：<input type="radio" name="sex" />男
+209         <input type="radio" name="sex" />女<br />210
+211         复选按钮：<input type="checkbox" name="hobby" />唱歌
+212         <input type="checkbox" name="hobby" />游戏
+213         <input type="checkbox" name="hobby" />代码<br/>214
+215         下拉列表选择框<select name="select">
+216             <option>---请输入所在的城市---</option>
+217             <option>北京</option>
+218             <option>上海</option>
+219             <option>杭州</option>
+220             <option>福州</option>
+221             <option>厦门</option>
+222         </select><br/>223
+224         普通按钮：<input type="button" value="普通按钮" /><br />225
+226         文件域：<input type="file" name="file1" /><br/>227
+228         影像域：<input type="image" src="" width="192" height="120" disabled/><br/>229
+230         隐藏域：<input type="hidden" name="userId" /><br/>231
+232         文本域：<textarea cols="60" rows="6" readonly>
+233             请您输入观看《伴我同行2-大雄的婚礼》的感想 :)
+234         </textarea><br/>
+235
+236         <label for="email">邮箱验证：</label>
+237         <input type="email" name="email" id="email" /><br/>238
+239         URL验证：<input type="url" name="url" /><br/>240
+241         数字验证：<input type="number" max="100" min="0" step="5" /><br/>242
+243         滑块标签：<input type="range" name="voice" max="100" min="0" step="10" /><br/>244
+245         搜索框：<input type="search" /><br/>246
+247         自定义电话：<input type="text" name="DiyEmail" pattern="\d{3}-\d{8}|\d{4}-\d{7}" /><br/>248
+249         重置按钮：<input type="reset" value="清空" /><br />250
+251         提交按钮：<input type="submit" value="登陆" /><br />
+252     </form>
+253
+254     <!-- 锚链接，需要一个锚标记，跳转到标记 href="#跳转到的标签name" -->
+255     <hr/>
+256     <a name="bottom" href="#top" style="text-decoration: none;">回到顶部</a>
+257
+258 </body>
+259
+260 <script>
+261     // 设置时间
+262     function showTime() {
+263         // 获取显示时间的控件
+264         var time = document.getElementById("time");
+265
+266         // 获取日期对象
+267         var date = new Date();
+268
+269         // 给 <p> 标签赋值内容
+270         time.innerHTML = date;
+271     }
+272
+273     // 定时器，设置间隔 1000ms 刷新
+274     setInterval(showTime, 1000);
+275 </script>
+276
+277 </html>
